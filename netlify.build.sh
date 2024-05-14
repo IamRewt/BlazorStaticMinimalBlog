@@ -8,5 +8,5 @@ chmod u+x /tmp/dotnet-install.sh
 /tmp/dotnet-install.sh --channel 8.0
 popd
 
-## publish project to known location for subsequent deployment by Netlify
-dotnet run --project ./BlazorStaticMinimalBlog.csproj -c Release
+## Run the dotnet run command, in Release mode, if in develepment the build will run forever!!!!
+dotnet run --launch-profile "httpsr" --project ./BlazorStaticMinimalBlog.csproj --configuration release
