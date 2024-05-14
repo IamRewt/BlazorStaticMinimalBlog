@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.WebHost.UseStaticWebAssets();
 
 builder.Services.AddBlazorStaticService(opt => {
+    opt.OutputFolderPath = "site";
     opt.IgnoredPathsOnContentCopy.Add("app.css");//pre-build version for tailwind
 }
 ).AddBlogService<FrontMatter>();
