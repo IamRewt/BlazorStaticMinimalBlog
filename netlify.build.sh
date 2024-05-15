@@ -9,4 +9,4 @@ chmod u+x /tmp/dotnet-install.sh
 popd
 
 ## Run the dotnet run command, in Release mode, if in develepment the build will run forever!!!!
-dotnet run --launch-profile "httpsr" --project ./BlazorStaticMinimalBlog.csproj --configuration release
+dotnet run --launch-profile "netlify" --project ./BlazorStaticMinimalBlog.csproj --configuration release
